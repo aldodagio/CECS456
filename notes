@@ -25,4 +25,22 @@ Linear Regression:
 - Wj = (1/M)E(f(Xj)-Yj)Xj
 - b = (1/M)E(f(Xi)-Yi)
 - theta = theta - alpha * d(J)dx / d(Theta)dx
+- selecting your alpha value is very important
+- expect first assignment today
+- recommends doing through kaggle
+- if you have a target value use regression
+- categorization? 
+Begin Logistic Regression:
+- classification: y is either {0,1}
+- positive class is the class we are trying to find? spam or not spam? spam is positive because we are trying to classify spam
+- introduction of threshold
+Logistic Function:
+- sigmoid function
+- outputs between 0 and 1 
+- g(z) = 1 / (1 + e^-z) where 0 < g(x) < 1
+- looking at graph on slide -> z = 0 is a good example that makes sense b/c e^-(0) = 1 / M where M = 2; final answer = 0.5
+- z is really wx+b, so in reality we have e^-(wx+b)
+- what type of algorithm is logistic regression? its a classification function
+- 50% threshold
+- decision boundary can be calculated, see example on slide
 - 
