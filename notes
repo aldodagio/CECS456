@@ -1,1 +1,28 @@
-
+08/28/2023:
+- Rules vs Learning
+- Real Valued number equals regression
+- In both classification and regression we might have two or more inputs
+- having more inputs may help your solution
+- having more inputs does not change whether it is classification/regression
+- regression is dealing with numbers as output (continuous)
+- classification is discrete
+Linear Regression:
+9/6/2023:
+- cost functions seem like a good way to measure machine learning problems (and measuring the accuracy of the solution?)
+09/13/2023:
+- machine learning specialization - stanford
+- kaggle has many open notebooks
+- f(x) = wx + b
+-      = [ w b ]| x | = dot product notation = wx + b(1)
+                | 1 |
+- vector notation
+- Wi = Wi - alpha*( d(J)dx / d(Wi)dx )
+- Theta = Theta(i) - alpha*( d(J)dx / d(Theta(i)dx )
+- Useful to do the normalization of X (aka fixing size of X to make it converge)
+- We are basically calculating our data points and shifting them inside of a line (maybe a parabola) 
+- Calculating the cost function (from kaggle NB) = J = (1 / 2M)[(f(x)-y)^2]
+- E is used as SUMMATION notation in below equations
+- Wj = (1/M)E(f(Xj)-Yj)Xj
+- b = (1/M)E(f(Xi)-Yi)
+- theta = theta - alpha * d(J)dx / d(Theta)dx
+- 
