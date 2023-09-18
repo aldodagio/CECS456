@@ -43,4 +43,33 @@ Logistic Function:
 - what type of algorithm is logistic regression? its a classification function
 - 50% threshold
 - decision boundary can be calculated, see example on slide
-- 
+09/18/2023:
+- threshold does not have to be 50% - if for tumor (for example) 20% might be a good threshold because you may want to start looking at it at a shorter threshold when it comes to health
+- threshold is used to categorize the output
+- is 'z' variable equal to the threshold?
+- is that why the expression can change?
+- z is actually desicion boundary
+- Training set for cost function in logistic regression
+- i = 1,...,m training examples
+- cost function = error = loss function
+- can we square error cost? 
+- makes sense because we want to penalize error, we dont care about (+/-) values - we want absolute
+- non - convex is created from squaring cost function ; non convex confuses algo bc it creates local mins
+- logistic loss function
+- log(1) = 0 in our case means 0 error (for CLASS 1)
+- for CLASS 0, we want log(1) = 0 
+- motivation of changing loss is to have a nice loss function when we do gradient descent
+- using E for summation notation below
+- J(W,b) = 1/M E (f(W,b) (Xi) - (Yi)) - Logistic Regression Gradient Descent (double check for correctness)
+- Logistic Regression f(W, b)(X) = 1 / 1 + e^(-WX+b)
+- learned linear regression (regression) and logistic regression (classification)
+Overfitting in Regression
+- generalization is what is important in machine learning. goal is to train your model on various inputs it has seen and give a good output for an input it has not seen
+- models that are more complex than data are called 'high variance' (over fit)
+- models that have more complex data than model are called 'high bias' (under fit)
+- overfitting can be addressed by adding more input to model (more training examples)
+- overfitting can also be addressed by selecting features to include/exclude
+- too many details may end up being extra noise
+- regularization is another method to address overfitting
+- it reduces the size of parameters
+- controls the effect of parameters
