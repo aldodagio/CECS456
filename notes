@@ -73,3 +73,37 @@ Overfitting in Regression
 - regularization is another method to address overfitting
 - it reduces the size of parameters
 - controls the effect of parameters
+09/20/2023:
+Evaluating your model (Linear Regression):
+- complex model means more inputs (not necessarily good)
+- train / test split - split training data into test data as well to measure error before going into production
+- degree of freedom may look good for training but will ruin testing 
+- report error of training model means 'test' data
+- split of data should be RANDOM
+- test error will have higher error than train error 
+Evaluating your model (Logistic Regression):
+- count number of times that the algo has misclassified
+- d is the number of inputs (Model selection slide)
+Train/cross validation/test split:
+- J(train) pick a model d = n -> finding (W,b)
+- parameters of model usually you get from gradient descent 
+- J(cross validation) = min of JCV gets you d (# of inputs)
+- J(test) will give you the best model
+- model selection has to be done with cross validation
+- data leakage
+K-fold cross validation 
+- K is usually 5 or 10
+- this just means splitting the data into groups and taking more cross validation and try to get better error
+- final validation is test data - so just one test set at the end 
+Bias/Variance:
+- J(train) and J(CV) data set is low and model complexity is low - just right d = 2
+- J(train) and J(CV) data set is high and model complexity is low - high variance (overfit) d = 4
+-  J(train) and J(CV) data set is high and model complexity is high - low variance (underfit) d = 1
+How to select features?
+1. Start with an empty set
+2. Add the feature with the most info (correlation with output) to the feature set
+3. Evaluate model performance (with cross validation)
+4. Go to step 2 until model performance does not improve (much)
+Example f-set = {size, #bedroom, age of house} => JCV(size) => J(test)
+- building a correlation between feature and target variable (ex. price and size or price and # br, etc.)
+- 
