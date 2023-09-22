@@ -106,4 +106,31 @@ How to select features?
 4. Go to step 2 until model performance does not improve (much)
 Example f-set = {size, #bedroom, age of house} => JCV(size) => J(test)
 - building a correlation between feature and target variable (ex. price and size or price and # br, etc.)
+Saturday, 09/22/2023:
+Topic: Decision Tree Models
+- taking derivative of J gets you the best w and b
+- Cat/Dog classification problem
+- purity
+- cat dna and dog dna would give 100% purity
+- we want to maximize purity
+- we can use parameters like ear shape, face shape, whiskers
+Decision 2: When do you stop splitting?
+- getting everything from one node in the same class
+- or at least maximize it with the # of decision depth
+- if entropy is high, then impurity is high
+- half and half would be the worst measure of entropy after a split 
+- p0 = 1 - p1
+- H(p1) = -[p1log(2)(p1) + p0log(2)(p0)] where p1 & p0 are the outcome of a decsion d1
+- the best entropy basically filters out the best (at least thats how im thinking about it)
+The Information Gain
+- recursive algo splits the dataset and finds best information gain and checks if it has impurities, if it does, then iterate through features and see which ones give you better info gain and this algo goes until you get to maximum depth or when you have no impurities
+One-hot encoding technique:
+- if a categorical feature can take on k values, ...
+- use binary value inside feature
+Continuous Features:
+- splitting on a continuous variable
+- you can turn a continuous value into a decision : isWeight greater than 100? 
+Regression with Decision Trees:
+- continuous variable as a prediction output
+- instead of entropy - we are looking at variance
 - 
