@@ -133,4 +133,24 @@ Continuous Features:
 Regression with Decision Trees:
 - continuous variable as a prediction output
 - instead of entropy - we are looking at variance
-- 
+09/25/2023:
+- choosing a split side (that .72 is the entropy)
+- entropy is taken on each set
+- the resultant number on that slide is called "the information gain"
+- during recursive process think bout each node as the root node
+- this would fall under the supervised learning branch
+- because we know we are dealing with cats and dogs (y is given)
+- first decision tree was classification
+- Trees are highly sensitive to the data
+- People rarely use decision tress
+- Tree ensembles are more practical
+Sampling With Replacement
+- in each training set you will have repition of the samples
+- with the samples being repeated, the trees will be more focused on different subsets
+- generating more training data is called 'bagging data' with replacement
+- subset of training data and subset of features are both randomized
+Boosted Trees: 
+- adds trees sequentially by taking what the previous trees weaknesses were and adding more weight to those features on the next (current) tree
+XGBoost (eXtreme Gradient Boosting):
+- there are competitions
+- end of material that will be on midterm 1
