@@ -154,3 +154,17 @@ Boosted Trees:
 XGBoost (eXtreme Gradient Boosting):
 - there are competitions
 - end of material that will be on midterm 1
+09/27/2023:
+- hardware has improved a lot that has made the neural networks feasible 
+- activation function takes all the inputs and fires the output
+- layers / hidden layers
+- the initial inputs are mapped to the layers and the layers are basically neurons which become 'features' basically from what i understand
+- neural networks are black boxes (no visibility to the result)
+- decision trees are easily followable to the result, so these would not be black boxes
+- 0 - 255 range in gray scale image 
+- that must be the size of a byte
+- first layer, neural network is trying to learn all the different lines in the pixel
+- second layer, second order details starts generating facial parts
+- third layer, generates actual faces and compares to the face that was inputted
+- g = 1/2M E (f(x) - y)^2 where f(x) = wx -b
+- f(x) = ......................
