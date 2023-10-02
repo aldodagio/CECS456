@@ -168,3 +168,30 @@ XGBoost (eXtreme Gradient Boosting):
 - third layer, generates actual faces and compares to the face that was inputted
 - g = 1/2M E (f(x) - y)^2 where f(x) = wx -b
 - f(x) = ......................
+10/02/2023:
+Inference:
+- Vector values
+- the subscript is neuron # while the superscript is the layer #
+- forward propagation is basicaly a flow of data that goes through all the layers
+- the output of one layer is the input for the next
+Tensorflow Implementation:
+- imagine we are using temperature and duration for our inputs into our coffee roasting ml algo 
+- three binary identifiers for this algo: is the duration long enough? is the temp right? does the combo of temp and duration achieve good coffee?
+- combining linear models               _  _
+- vector would look something like: temp|200|
+                                duration|17 |
+- 'Dense' constructor is from Tensorflow software
+- in the slide with the code where a1 = layer1(x) - notice the layer takes an input and gives an output
+- np.array be wary of matrix notation
+- 'Sequential' constructor takes in your layers and creates your model as output
+- numpy, pandas, soktlearn, tensorflow (tf), pytorch, XGBoost
+- 'Ridge' - linear regression w/ ..
+Forward Prop in numpy:
+- install anymissingpackage
+- colab by google shouldnt have that problem tho
+- part 3 - only use gradient descent on trained dataset?
+- you cant change w and b based on what you get from test data
+- only the training dataset can change w and b
+- once you plateau, look at the ratio to find out if you should go further or not
+- if the ratio is less than the threshold, it is no longer worth it
+- test data you are not trying to change anything, you are just trying to find out when to stop
