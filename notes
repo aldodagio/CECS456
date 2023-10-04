@@ -195,3 +195,11 @@ Forward Prop in numpy:
 - once you plateau, look at the ratio to find out if you should go further or not
 - if the ratio is less than the threshold, it is no longer worth it
 - test data you are not trying to change anything, you are just trying to find out when to stop
+10/04/2023:
+- Project 1 Review:
+- dot product is used to not let a feature have too much impact/influence (normalization)
+- error is m x 1
+- x is m x F
+- for this lab f = 7 for number of features (7 inputs including the intercept)
+- m = 7386 for number of data rows
+- 
