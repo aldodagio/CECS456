@@ -202,4 +202,6 @@ Forward Prop in numpy:
 - x is m x F
 - for this lab f = 7 for number of features (7 inputs including the intercept)
 - m = 7386 for number of data rows
-- 
+10/06/2023: 
+- working on one-hot encoding lab assignment
+
