@@ -204,4 +204,6 @@ Forward Prop in numpy:
 - m = 7386 for number of data rows
 10/06/2023: 
 - working on one-hot encoding lab assignment
-
+- when get product error, best thing is to print what the two matrices being multiplied look like so we can try to understand further how to solve this
+- if not then we just have to trace back through the code or the data to see what the multiplying matrices or vectors should look like
+- 
