@@ -33,6 +33,7 @@
     17. What is k-fold CV?
     Answer: k-fold CV is the approach that iteratively k times repeats the process of training and testing the model to find the best cost.
     18. What is bias vs. variance? What is overfitting vs. underfitting?
+    Answer: they similarly measure whether you are overcomplicating your model to your data versus is your data too complicated to your model. 
     19. What is a decision tree and how do you train it?
     Answer: A decision tree splits its nodes continuously until the max depth is reached or purity is reached in the node
     20. How is information gain calculated for classification problems? ore regression problems?
