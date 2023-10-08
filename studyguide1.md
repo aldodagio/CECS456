@@ -1,5 +1,5 @@
 # Topics
-### Preliminary Answers for Each without looking at notes: 
+### Preliminary Answers Without Looking at Notes/Slides: 
     1. Given a problem, can you tell if it is supervise vs unsupervised learning or regression vs classification problem?
     2. Be comfortable with linear regression; how do you define it mathematically? What are the parameters? How do you find optimal parameters?
     3. Why do we need cost function? What is gradient decent and why it works? How we update a parameter in each iteration?
