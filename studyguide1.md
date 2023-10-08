@@ -1,7 +1,7 @@
 # Topics
 ### Preliminary Answers Without Looking at Notes/Slides: 
     1. Given a problem, can you tell if it is supervise vs unsupervised learning or regression vs classification problem?
-    Answer: supervised versus unsupervised has to do with the labels. With labels is supervised learning while without labels is unsupervised. Both require outputs (predictions). regression gives scalar output f(x) = wx + b while classification's output                   f(x) is a binary value {0,1}.
+    ***Answer: supervised versus unsupervised has to do with the labels. With labels is supervised learning while without labels is unsupervised. Both require outputs (predictions). regression gives scalar output f(x) = wx + b while classification's output                   f(x) is a binary value {0,1}.***
     2. Be comfortable with linear regression; how do you define it mathematically? What are the parameters? How do you find optimal parameters?
     3. Why do we need cost function? What is gradient decent and why it works? How we update a parameter in each iteration?
     4. What is the impact of learning rate on finding the optimal parameter?
