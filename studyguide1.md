@@ -39,9 +39,18 @@
     20. How is information gain calculated for classification problems? ore regression problems?
     Answer: information gain is calculated using the current layer of nodes in a decision tree and calculating the number of expected / size of (n - 1) node
     21. One-hot encoding?
-    Answer: one-hot encoding is splitting one feature into n number of columns where each column's value must be a value equal to 0 or 1. It is called one-hot encoding because the value of the feature is the                   column where the value is 1, all other column values for that row would result in 0. 
+    Answer: one-hot encoding is splitting one feature into n number of columns where each column's value must be a value equal to 0 or 1. It is called one-hot encoding              because the value of the feature is the column where the value is 1, all other column values for that row would result in 0. 
     22. What is disadvantage of decision trees? How can this be improved?
     Answer: The algorithm seems more complex and more slow. I am not sure what the true answer is. 
     23. What is bagging?
     24. How does RF work? How does Gradient Boosting work?
     25. What is feature importance in tree ensembles?
+Linear Regression?
+a) f(X) = 2x1 + 3x2 + 5x3 (yes)
+b) f(x) = 4x1x2 + 2x3^2 (yes)
+c) f(x) = 2x1 + 3x1^2 + 4x1^3 + cos(45 degrees) (yes)
+d) f(x) = 2cos(x1) + 3x2 (yes)
+e) f(x) = e^(2x1) + e^(3x2) + 5 (no)
+feature engineering:
+where x is a feature
+relationship of parameters to features must be linear (wx)
