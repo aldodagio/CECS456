@@ -206,4 +206,5 @@ Forward Prop in numpy:
 - working on one-hot encoding lab assignment
 - when get product error, best thing is to print what the two matrices being multiplied look like so we can try to understand further how to solve this
 - if not then we just have to trace back through the code or the data to see what the multiplying matrices or vectors should look like
+10/09/2023:
 - 
