@@ -54,3 +54,4 @@ e) f(x) = e^(2x1) + e^(3x2) + 5 (no)
 feature engineering:
 where x is a feature
 relationship of parameters to features must be linear (wx)
+10/10/2023:
