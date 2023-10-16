@@ -206,5 +206,47 @@ Forward Prop in numpy:
 - working on one-hot encoding lab assignment
 - when get product error, best thing is to print what the two matrices being multiplied look like so we can try to understand further how to solve this
 - if not then we just have to trace back through the code or the data to see what the multiplying matrices or vectors should look like
-10/09/2023:
+10/16/2023:
+- midterm 2 is on november 15
+- team projects presentation: dec 6 and 11
+- team forming deadline nov 17
+- team (3 to 4 persons)
+Neural Networks Training:
+- from inference slide on neural network slides: 
+- calculation with 4 neurons inside big [ ] square brackets where the square brackets represent the neuron layer
+- forward propogation 
+- fully connected network
+- current layer looks at output for every neuron in previous layer
+- dense layer is everything is connected to each other
+- for coffee, we used temp vs duration
+- tensorflow acquired keras which makes ml coding quicker
+- number of estimators is equal to the number of trees
+- model fit - back propagation - gradient descent type concept
+Create Model:
+- define the model - f(x) = ? first layer parameters plus the second layer parameters plus the third layer parameters
+- based on 'units' (i think units are neurons) and training examples? i think but double check
+- logistic loss = binary cross entropy
+- J is after the final output, because we are taking the error of that
+Gradient Descent:
+- iteratively take the derviative of the final layer down to the first layer (chain rule)
+- this way you can see the effect each layer had on the loss
+- example of getting cost of first layer: d (J) / dx (w[1]) = d (J) / dx (w[3]) * d (w[3]) / dx (w[2]) * d (w[2]) / dx (w[1])
+Activation Functions:
+- probability of demand prediction?
+- if demand prediction wants to know the number of units you can sell
+- then, maybe you do not want to use sigmoid function as activation function (because it is now regression problem)
+- rectified linear unit (ReLU)
+- binary classification - sigmoid Y = 0,1
+- regression - linear activation function Y = +/-
+- regression - ReLU Y = 0 or +
+What do we use for hidden layers? 
+- relu is easier/faster to train models and is the most common choice because it is non linear
+- this is the most common choice for hidden layers
+- need non-linearity in all hidden layers or else layers are not doing anything to contribute to model complexity
+- binary classification = activation = sigmoid at end
+- regression = activation = linear at end Y = =/-
+- regression Y >= 0 -> activation = 'relu'
+- number of neurons is mostly trial/error, and depends on what you are trying to solve
+- start small usually
+- adding hidden layers
 - 
