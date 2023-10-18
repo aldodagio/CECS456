@@ -249,4 +249,37 @@ What do we use for hidden layers?
 - number of neurons is mostly trial/error, and depends on what you are trying to solve
 - start small usually
 - adding hidden layers
+10/18/2023:
+- derivatable function to calculate loss function is the wanted outcome
+- for decision trees we split and find which would be the best that way instead of a differentiable function
+- ReLU is the only recommended activation function to use on hidden layers 
+Multiclass classification:
+- MNIST example
+- graph on multiclass classification:
+- important takeaways for binary classification graph:
+- the probability of circle and x are not 50/50 - its a function of f(y | x) or f(x | y)
+- important takeaways for multiclass class. graph:
+- do those 4 different probabilities add up to 1? 
+Softmax Function: 
+- 4 possible outputs for this example
+- where x, circle, square, triangle are equal to zi = wi*x + bi where ai = e^zi / E (e^zi + ... + e^zn), this is how to solve for each a value
+- cross entropy loss 
+- loss(a1, ..., an, y) = { -log(a1) if y = 1, -log(a2) if y = 2, -log(an) if y = N }
+- softmax is an activation function
+- softmax is used when you have more than two classes
+- units=N in Dense(units=10, activation='softmax') is the number of classes
+- epoch - number of times that your neural network has seen all the data
+- iterations in regression is equiv to epoch in softmax
+- batch size?
+- splitting data into number of batches
+Numerical roundoff errors in programs:
+- those errors may end up showing in your loss function
+multi-label classification:
+- an input can be mapped to multiple outputs
+Advanced Optimization:
+Gradient Descent:
+- wj = wj - (learning rate) * d/dx(wj) * J(w,b)
+- "Adam Algorithm" - adaptive moment estimation - different values of alpha (learning rate) are tried
+Convolutional Layer - faster and only looks at a subset of input layers
+- convolutional neural network like face ID
 - 
