@@ -282,4 +282,36 @@ Gradient Descent:
 - "Adam Algorithm" - adaptive moment estimation - different values of alpha (learning rate) are tried
 Convolutional Layer - faster and only looks at a subset of input layers
 - convolutional neural network like face ID
+10/23/2023:
+- bias/variance trade-off
+- complex model - high variance - model has lots of parameters
+- simple model - high bias
+- more complex model, chance to be high variance - high variance means that if you test/train model then you will get different results
+- high degree of freedom
+- neural networks are usually high variance and low bias
+- why add more data? instead of make neural network smaller? to reduce variance
+- the reason is because J(train) is already good at this point and resizing the network size would mess with J(train)
+- a large nn will usually do better than a smaller nn assuming regularization is chosen appropriately
+- neural network regularization:
+- J(W,B) = 1/m E L(f(x^i), y^i) + (alpha / 2m) * E(w^2)
+- kernel_regularizer (regularized MNIST model)
+- manually sample 100 of data entries
+- if you have good error on train and cv, then we can do error analysis
+- or you can do error analysis if you cant get to the error number you want on train or cv
+Data augmentation:
+- augmenting your data entries to make data set richer
+- augmenting by introducing distortions
+For speech:
+original audo - voice search - what is todays weather
+   X(input)         Y(output)
+1. mp3       |    ...............
+2. mp3       |    ............... (crown noise)
+3. mp3       |    ............... (car noise)
+Data synthesis:
+- using artificial data inputs to create a new training example
+- data aug - modifying train set
+Transfer Learning:
+- detatch last layer (softmax) from a model that is trained well on one job
+- supervised pretraining
+- fine tuning is adjusting the supervised pretrained model to work for our purposes
 - 
