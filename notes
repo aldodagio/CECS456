@@ -302,7 +302,7 @@ Data augmentation:
 - augmenting your data entries to make data set richer
 - augmenting by introducing distortions
 For speech:
-original audo - voice search - what is todays weather
+original audo - voice search - "what is todays weather"
    X(input)         Y(output)
 1. mp3       |    ...............
 2. mp3       |    ............... (crown noise)
@@ -314,4 +314,27 @@ Transfer Learning:
 - detatch last layer (softmax) from a model that is trained well on one job
 - supervised pretraining
 - fine tuning is adjusting the supervised pretrained model to work for our purposes
-- 
+10/25/2023:
+- kernel_regularizer(0.01) where 0.01 is lambda
+- data augmentation is still supervised learning
+- transfer learning - 1. download nn parameters pretrained on a large dataset with the same input type as your application
+- further train
+- bias (different kind of bias): facial recognition yale dataset professor talked about 
+- all white men mostly
+- counter-attack on bias
+- audit system -> golden set
+- guidelines for ml bias
+Skewed Datasets:
+- precision/recall (confusion matrix):
+- true positive, false positive, false negative, true negative
+- y = 1 in presence of rare class we want to detect
+- rate of recall
+- print("y=0"), in this case precision would be zero, recall would be zero
+- higher precision, lower recall
+- lower precision, higher recall
+- harmonic mean = 1 / ((1/2)*(1/P + 1/R)) = 2(PR/P+R)
+- if p is small then mean will be close to P
+- if r is small then mean will be close to R
+- imbalanced datasets treatments - adding class weights to loss function
+- F1 Score
+- penalize classes differently depending on number of samples
