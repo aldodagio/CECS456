@@ -338,3 +338,42 @@ Skewed Datasets:
 - imbalanced datasets treatments - adding class weights to loss function
 - F1 Score
 - penalize classes differently depending on number of samples
+11/1/2023:
+- 10/30 started unsupervized learning and clustering
+- you can label clusters
+- k means clustering intution - cluster centroids 
+-  k means algo
+- randomly init k cluster centroids
+- k means optimization ovjective
+- c^(i) = index pf cluster to which example x^(i) is currently assigned 
+- mew (k) = cluster centrouid k
+- mew (c^(i)) = cluster centroid of cluster to which example
+Anomaly Detection:
+- p(Xtest) < E (where E is epsilon) 
+- Model p(x) probability of x being seen in dataset
+- where epsilon is the 'threshold'
+Gaussian (bell shaped) distribution:
+- p(x) = (1/sqrt(2pi(variance))) * e^(-x - (-mew)^2 / 2(variance)^2)
+- range is typically -sigma to sigma
+- mew = average and sigma (variance)
+- where mew = 0, and sigma = 1 (normal dist.)
+- the integral of p(x)dx from -inf to +inf must be equal to 1
+- the taller the bell curve, the more concentrated the points which intuitively tell us that it will be more certain results
+- mew is the most confident value, sigma is the certainty
+- parameter estimation:
+- maximum likelihood, for mew, sigma,(1/ m-1) then sigma^2 = 1/m E (x^(i) - mew)^2 where E = sum
+- where mew = (1/m) E x^(i) where E = sum
+- std sigma = sqrt(sigma)
+- average of distance from each point
+Algo for higher dimension (using vectors):
+- assume indepence of feature, then find mew and sigma for each feature
+1. choose n feature Xi 
+2. fit parameters
+3. given new example Xi compute p(x) -> p(Xi | mew(i)sigma(i)) * p(Xi+1 | mew(i+1)*sigma(i+1)) < E
+anamoly if p(x) < E where E is epsilon (threshold)
+Evaluating Anomaly detection systems:
+- anamolies should not be included in training set, but test set should have some
+- algo evaluation: y = { 1 if p(x) < anomoly, 0 if p(x) > anomoly }
+Anomaly detection vs supervised learning:
+- in supervised learning, we want to know both classes y = 0 and y =1
+- in anomaly detection we only care about y =0
