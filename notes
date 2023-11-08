@@ -377,3 +377,26 @@ Evaluating Anomaly detection systems:
 Anomaly detection vs supervised learning:
 - in supervised learning, we want to know both classes y = 0 and y =1
 - in anomaly detection we only care about y =0
+11/8/2023:
+- custom renderer is the topic i believe
+- movie rating predictions based on real predictions by people
+- you can add the cost function to learn w,b to the cost function to learn x 
+- mew vector is the rating predictions vector
+- even if eve has 0, then her prediction isnt necessarily zero - you can take the mean from the mew vector and add that to get a better prediction
+- because obviously she wont rate every single movie as 0, even though it is possible..
+- adam optimizer each parameter is optimized individually? fact check this
+- find similar movie algorithms: if you represent your movies (items) in some space then you can find similar ones by finding the difference in those items 
+- the features of x(i) of item i are quite hard to interpret. to find other items related to it , then find item k with x(k) similar to x(i)
+- the smallest distance would mean that the model is telling you those are the most similar
+- users or items with few or no ratings, have to get info from other items to give a prediction
+- cold start problem
+- collabortive vs content filtering
+- feature vector for movies and feature vector for users
+- so netflix can tell user which movies they may like
+- each vector can be different lengths
+- where in the cost function for content based filtering w is user abstractions and x is movie actractions
+- deep learning for content based filtering where cost function is the sum of v(u) dot product with v(i) - y^(i,j) all squared plus the nerural network regularization term
+- retrieval vs ranking tradeoff
+- the higher the size of retrieval size, then computation size goes up and quality goes up
+- goal of recommender system - 
+- midterm is comprehensive up to 11/6
