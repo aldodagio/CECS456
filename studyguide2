@@ -1,0 +1,36 @@
+say you have a regression problem with an x with 1k rows and 10 columns
+and y with 1k rows and 1 column
+2 hidden layers of 20, 5 neurons
+1. how many params?
+20*11 + 21*5 + 6*1 = 326
+2. set the act func. for each layer? relu, relu, linear (for regres.)
+   relu, relu, sigmoid (for binary class.)
+   relu, relu, softmax ( >2 softmaxx) 
+   relu, relu, relu, relu ( when regression output is greater than or equal to 0 )
+output is just one neuron
+bias in variance and human bias
+given nn, how many parameters?
+J = (1/m) E (y-yhat)^2 + (lambda/326) E (Pi)^2
+lambda size influences the right side of equation
+what is forward propagation?
+- for new input that comes in pass them through activation functions and get the output at the end
+- backward propagation is looking at the true value versus the prediction. take derivative and see which features need to get updated proportional to the error 
+K-Means Clustering:
+- given this objective function J = (1/m) E || xi - mew(Ci) ||^2 what is the best k for this data? 
+a) 2 b) 4 c) 6 d) 8
+distance from centroid from all other points?
+the maximum is the one that gives you zero error - where there is no distance in clusters
+anamolu deterction vs supervise learning:
+1) identifying detective jackets in production line (anomoly) where we separate defective versus non defective
+2) ""           jackets with missing buttons (supervised) where we have a specific class to find (jacket w missing buttons)
+In diagnosis of rare disease, our model is 99.5% accurate - should we trust this model?
+there might not be enough data on this 'rare disease'
+precision/recall
+confusion matrix
+actual vs predicted labels
+ideal case is decision matrix is diagnol, with the other elements equal to 0
+right skewed dist. vs left skewed dist.
+log(x+c) || (x+c)^1/p                  log(c-x) || (c-x)^1/p
+make sure for above everything inside the paranthesis should be positive
+has to be more than the maximum of x
+- 
