@@ -400,3 +400,12 @@ Anomaly detection vs supervised learning:
 - the higher the size of retrieval size, then computation size goes up and quality goes up
 - goal of recommender system - 
 - midterm is comprehensive up to 11/6
+11/27/2023:
+- final project notes
+- 3 models and analyze
+- Going over previous projects:
+- Ridge and Lasso
+- Organization?
+- confusion matrix: actual x predicted
+- if it is perfect only diag will have nonzero values
+- the confusion actually comes from the non-diag values
