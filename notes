@@ -409,3 +409,17 @@ Anomaly detection vs supervised learning:
 - confusion matrix: actual x predicted
 - if it is perfect only diag will have nonzero values
 - the confusion actually comes from the non-diag values
+12/04/2023:
+- principle component analysis
+- requirements like car width - it has to fit on the road
+- car length varies a lot
+- variance is higher in length compare to width
+- the length of the car may have higher correlation to to other features - like wheels, height
+- pca is looking for combination of features that has the highest variance and picks that for each prinicpal components
+- pca is not linear regression
+- for final project, maybe we should take both 2021 and 2022 data and create an intersection so it doesnt include rookies
+- because there is no way of predicting rookies
+- fit includes normalization
+- explained_variance_ratio
+- transform
+- 
